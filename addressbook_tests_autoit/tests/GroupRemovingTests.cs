@@ -15,7 +15,7 @@ namespace addressbook_tests_autoit
         {
             List<GroupData> oldGroups = app.Groups.GetGroupList();
             GroupData toBeRemoved = oldGroups[0];
-            app.Groups.Remove(toBeRemoved);
+            app.Groups.Remove();
             List<GroupData> newGroups = app.Groups.GetGroupList();
             oldGroups.Remove(toBeRemoved);
             oldGroups.Sort();
